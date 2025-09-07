@@ -1,3 +1,14 @@
+
+<body style="background-color:red">
 <h1>404</h1><br>
 这个页面不存在<br>
-<a href="/">主页面</a>
+<a href="/">主页面</a><br>
+或者在此输入path:<input id="a"><button onclick="A()">确定</button><br>
+<a id="b">点击完确定按钮之后点击我,我会带你跳转到你想要的网页</a>
+<script>
+function A(){
+	let a=document.getElementById('a').value;
+	document.getElementById('b').href=`https://www.x-com.中国/${a}`;
+}
+</script>
+</body>
